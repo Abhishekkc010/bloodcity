@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "931051574176",
+    "project_id": "bloodcity10",
+    "storage_bucket": "bloodcity10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931051574176:android:94f203ff4706eb23e54ac5",
+        "android_client_info": {
+          "package_name": "com.example.applicationtwo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931051574176-1l6du7fbjv9mcm07i72dk6dkdnsbq9r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvL5Zq5rCeABTU8SlpfCRakzt_iJYt_5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931051574176-1l6du7fbjv9mcm07i72dk6dkdnsbq9r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
