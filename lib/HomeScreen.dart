@@ -22,12 +22,14 @@ class Home extends StatelessWidget {
             Container(
               height: 400,
               padding: const EdgeInsets.only(
-                  left: 43, top: 92, right: 43, bottom: 90),
+                  left: 43, top: 72, right: 43, bottom: 80),
               width: double.infinity,
               decoration: const BoxDecoration(
                   image: DecorationImage(
+
                 image: AssetImage('Images/bloodcity.png'),
-                fit: BoxFit.fitHeight,
+                    scale: 0.5,
+                    // fit: BoxFit.fitHeight,
               )),
             ),
             // Container(

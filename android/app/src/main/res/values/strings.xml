@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="facebook_app_id">2075548255952687</string>
-    <string name="fb_login_protocol_scheme">fb2075548255952687</string>
-    <string name="facebook_client_token">56789</string>
-    <string name="app_name">BloodCity</string>
+    <string name="facebook_app_id">540461050629900</string>
+    <string name="fb_login_protocol_scheme">fb540461050629900</string>
+    <string name="facebook_client_token">0d4d4676596f71fd8ba3160b64a98cfa</string>
+    <string name="app_name"></string>
 </resources>

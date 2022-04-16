@@ -1,8 +1,13 @@
+import 'package:applicationtwo/Message.dart';
+import 'package:applicationtwo/MyRequest.dart';
 import 'package:applicationtwo/Profile.dart';
+import 'package:applicationtwo/Rating.dart';
+import 'package:applicationtwo/chat_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'Login.dart';
+import 'Notification.dart';
 import 'View.dart';
 import 'requestblood.dart';
 
@@ -63,6 +68,19 @@ class _NavDrawerState extends State<NavDrawer> {
                 color: Colors.black,
               ),
               title: const Text(
+                'Message',
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, MessagePage.id);
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(
+                Icons.add_circle_outlined,
+                color: Colors.black,
+              ),
+              title: const Text(
                 'View Blood Request',
               ),
               onTap: () {
@@ -77,13 +95,63 @@ class _NavDrawerState extends State<NavDrawer> {
               title: const Text(
                 'Profile',
               ),
-              onTap: () async {
-                await signOut();
-                if (auth.currentUser == null) {
-                  Navigator.pushNamed(context, ProfileApp.id);
-                }
+              onTap: () {
+                Navigator.pushNamed(context, ProfileApp.id);
               },
             ),
+            ListTile(
+              leading: const Icon(
+                Icons.rate_review ,
+                color: Colors.black,
+              ),
+              title: const Text(
+                'Rating',
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, Rating.id);
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(
+                Icons.rate_review ,
+                color: Colors.black,
+              ),
+              title: const Text(
+                'Rating',
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, Myrequest.id);
+              },
+            ),
+            ListTile(
+              leading: const Icon(
+                Icons.mail ,
+                color: Colors.black,
+              ),
+              title: const Text(
+                'Message 1-1',
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, Chats.id);
+              },
+            ),
+            ListTile(
+              leading: const Icon(
+                Icons.mail ,
+                color: Colors.black,
+              ),
+              title: const Text(
+                'Notifications',
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, Notifications.id);
+              },
+            ),
+
+
+
+
             ListTile(
               leading: const Icon(
                 Icons.logout,
@@ -98,7 +166,11 @@ class _NavDrawerState extends State<NavDrawer> {
                   Navigator.pushNamed(context, Login.id);
                 }
               },
+
+
             ),
+
+
           ],
         ),
       ),
